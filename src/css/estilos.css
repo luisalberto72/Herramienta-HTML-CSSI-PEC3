@@ -306,9 +306,8 @@ main.home {
 
 @media only screen and (max-width: 768px) {
     footer {
-      width: 100%;
-      bottom: 0;
-      left: 0;
+        width: 100%;
+        overflow-x: hidden; /* Evitar desplazamiento horizontal */
     }
     .container{
        font-size: 0.5rem;
