@@ -299,6 +299,18 @@ main.home {
   }
 }
 
+@media only screen and (width <= 768px) {
+  footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  .container {
+    font-size: .5rem;
+  }
+}
+
 main.home section {
   padding-top: 3rem;
   padding-bottom: 3rem;
