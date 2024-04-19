@@ -1,12 +1,26 @@
-# Ignorar archivos compilados
-*.o
-*.out
+# Directorios específicos de Parcel
+.cache
+dist
+.cache-loader
 
-# Ignorar archivos de respaldo
+# Archivos generados por Parcel
+*.parcel-cache
+*.parcel-cache-lock
+
+# Node.js
+node_modules
+
+# Archivos de respaldo
+*.bak
 *~
 
-# Ignorar directorios de dependencias
-/node_modules
-
-# Ignorar archivos de configuración local
+# Archivos de configuración local
 .env
+
+# Archivos de registro
+*.log
+npm-debug.log*
+
+
+# Archivos de dependencias o paquetes
+package-lock.json
