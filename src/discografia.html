@@ -7,6 +7,44 @@
         <title>U2 - Página de detalles</title>
         <meta name="description" content="Discografía de U2.The Unforgettable fire.Acthung Baby.Joshua Tree.Albumes de U2">
         <link rel="stylesheet" href="css/estilos.css">         
+
+        <style>
+
+        .featured-image-container {
+                    width: 100%;
+                    max-width: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    text-align: center;
+                }
+
+        .featured-image {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            margin-left:150px;
+
+        }
+
+        .explorar{
+            margin-top:20px;
+
+        }
+
+        /* Estilos para la sección con la clase card-disco */
+.card-disco {
+    display: flex; /* Utilizar flexbox para organizar el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+}
+
+/* Estilos para la imagen U2Cafe */
+.new-image {
+    width: 200px; /* Tamaño deseado para la imagen */
+    height: auto; /* Para mantener la proporción de aspecto */
+    margin-right: auto; /* Empujar la imagen hacia la izquierda */
+    margin-top: 20px; /* Margen superior */
+}
+        </style>
     </head>  
 
 <body>
@@ -20,9 +58,14 @@
         <article>
             <header>
                 <h1>Discografía de U2</h1>
-                <p>Explora los álbumes icónicos de U2</p>
+                <div class="featured-image-container">
+                <img src="./img/U2Disco.jpg" alt="Imagen discografia de U2" class="featured-image">
+            </div>
+                
             </header>
 
+            <p class="explorar">Explora los álbumes icónicos de U2</p>
+            
             <div class="container-discografia">
                 <!-- Tarjeta del álbum "Boy" -->
                 <div class="album-card">
@@ -97,9 +140,10 @@
                 <p>En resumen U2 ha vendido 175 millones de discos en todo el mundo . Con 52 millones de unidades certificadas por la RIAA, U2 se ubica como el artista musical número 22 con mayores ventas en los EE. UU . U2 tiene ocho álbumes que han alcanzado el número uno en los EE. UU., la tercera mayor cantidad de cualquier grupo.</p>
              </section>
             </div>
+           
             <div class="card-disco">
-            
                 <section>
+                    <img src="./img/CafeU2.jpg" alt="Cafe U2" class="new-image u2-circle">
                     <h2>Listado Albumes de U2</h2>
                     <ol>
                         <li>Boy (1980)</li>
@@ -118,6 +162,7 @@
                         <li>Songs of Experience (2017)</li>
                     </ol>
                 </section>
+              
             </div>
         <!-- Video de U2 -->
         <figure>

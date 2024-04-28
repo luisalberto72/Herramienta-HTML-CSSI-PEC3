@@ -54,6 +54,11 @@ body {
   background-color: var(--neutral-color);
 }
 
+h1.header {
+  color: var(--blanco-color);
+  font-size: 1.5rem;
+}
+
 h1, h2, h3, h4 {
   font-family: Noto Serif, serif;
   font-weight: 600;
@@ -111,6 +116,14 @@ a {
 
 a:hover {
   color: var(--main-color);
+}
+
+.u2-animation {
+  clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.u2-circle {
+  clip-path: circle(120px);
 }
 
 @media (width >= 992px) {
@@ -560,28 +573,8 @@ iframe.video-fluid {
 h1.presentacion {
   letter-spacing: -1px;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 900;
-}
-
-h2.presentacion {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-}
-
-abbr {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.second-paragraph {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.third-paragraph {
-  margin-top: 40px;
 }
 
 .image-container {
@@ -686,5 +679,19 @@ dd {
 
 dd p:first-child {
   margin-bottom: 0;
+}
+
+@keyframes animate-svg-fill-1 {
+  0% {
+    fill: #0000;
+  }
+
+  100% {
+    fill: #000;
+  }
+}
+
+.svg-elem-1 {
+  animation: 2s cubic-bezier(.47, 0, .745, .715) 2s infinite alternate animate-svg-fill-1;
 }
 /*# sourceMappingURL=index.b026e049.css.map */
