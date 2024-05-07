@@ -22,7 +22,40 @@
     transform: scale(1.1); /* Aumentar ligeramente el tamaño al hacer hover */
 }
 
+.featured-image-container {
+                    width: 100%;
+                    max-width: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    text-align: center;
+                }
 
+        .featured-image {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            margin-left:150px;
+
+        }
+
+        .explorar{
+            margin-top:20px;
+
+        }
+
+        /* Estilos para la sección con la clase card-disco */
+.card-disco {
+    display: flex; /* Utilizar flexbox para organizar el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+}
+
+/* Estilos para la imagen U2Cafe */
+.new-image {
+    width: 200px; /* Tamaño deseado para la imagen */
+    height: auto; /* Para mantener la proporción de aspecto */
+    margin-right: auto; /* Empujar la imagen hacia la izquierda */
+    margin-top: 20px; /* Margen superior */
+}
     </style>
        
 </head>
@@ -34,74 +67,95 @@
     <main class="categorias">
         <article>
             <header class="categorias">
-                <h1>Anécdotas interesantes</h1>
-                <p>Descubre curiosidades y detalles interesantes sobre U2</p>
+                <h1>Discografía</h1>
+                <p>Explora la discografía de U2</p>
             </header>
 
-            <section>
-                <h2>Anécdotas sobre U2</h2>
-                <ul>
-                    <li>Un 25 de septiembre de 1973 bajo el anuncio publicado por Larry Mullen Jr. (baterista y compositor de U2) en el tablón de anuncios de su instituto, “Batería busca músicos para formar una banda”, inicia la historia de uno de los grupos de rock alternativo más emblemáticos de la historia.</li>
-                    <li>La leyenda cuenta que U2 tomó su nombre en honor al avión espía Lockheed U-2 derribado por los rusos en los días del nacimiento de Bono, el vocalista de la banda.</li>
-                    <li>El álbum "The Joshua Tree" fue inspirado por la travesía que la banda hizo por el desierto de Mojave en California.</li>
-                    <li>U2 al igual que hicieron los Beatle en 1969, se subió a una azotea en la ciudad de Los Angeles para grabar "Where The Streets Have No Name"</li>
-                    <li>Bono, el líder de la banda, adoptó su nombre artístico debido a un tienda de suministros para el hogar llamada "Bonavox", que significa "buena voz" en latín.</li>
-                    <li>En la gira ZooTV, Bono creo tres alter egos que han pasado a la historia del rock: The Fly, Mirror Ball Man y Mr. McPhisto.</li>
-                    <li>Mr. MacPhisto era imaginado por Bono como una futura versión corrupta del personaje de The Fly, que se había convertido en una amalgama del diablo y un crooner del estilo de Elvis Prestley en su época de Las Vegas.</li>
-                    <li>Mr. MacPhisto figuraría posteriormente de forma prominente en el videoclip para Hold Me, Thrill Me, Kiss Me, Kill Me extraído de la banda sonora de la película Batman Forever, que incluía una versión animada de Bono como una estrella del rock luchando entre dos personajes, The Fly y Mr. MacPhisto, intentando hacer un paralelo con el conflicto entre el playboy Bruce Wayne y el justiciero Batman.</li>
-                    <li> Mr. MacPhisto llevaba un traje dorado, zapatos de oro y cuernos de diablo sobre su cabeza. Su cara lucía abundante maquillaje. Hablaba con un fuerte acento mezcla de muchos, primordialmente británico.</li>
-                    <li>The Edge y Bono compusieron una canción para Tina Turner, que sería utilizada como soundtrack de la película “GoldenEye” de la saga de James Bond. La canción lleva el mismo nombre que la película.</li>
-                    <li>La madre de Bono muere trágicamente cuando él tenía 14 años, hecho que lo marcó de por vida. Por esta razón el ha dedicado varias canciones a ella como “Mofo”, “I will follow” o “Tomorrow”</li>
-                    <li>Bono se ha caracterizado por su ayuda humanitaria, por ello le fue concedido el título de Caballero Honorario por la reina Isabel II. Él es creador de ONE, fundación dedicada a combatir la pobreza extrema y el hambre.</li>
-                    <li>Bono confesó que usa gafas de sol siempre por que sufre glaucoma, enfermedad que le provoca sensibilidad a la luz.</li>
-                    <li>Bono es el único personaje del mundo en ser nominado a los Grammy (de los que U2 ha ganado 22), Premios Oscar, Globo de Oro y Premio Nobel de la paz (nominado en 3 ocasiones.)</li>
-                    <li>Inspirados en el estilo de Frank Sinatra, crearon la canción “Stay (Faraway, So Close!)” en su disco “Zooropa.”</li>
-                    <li>En 2009 la banda fue multada en Barcelona por superar tanto en los ensayos como en el concierto, el límite de decibeles permitidos por el ayuntamiento.</li>
-                    <li>La mayor audiencia registrada en un concierto de U2, fue de 150,000 personas en su gira PopMart realizada en Italia en septiembre de 1997. </li>
-                    <li>La canción “With or Without you” es la séptima canción mas solicitada en los funerales de Reino Unido, según una encuesta realizada en Londres.</li>
-               </ul>
-            </section>
+            <div class="container-discografia">
+                <!-- Tarjeta del álbum "Boy" -->
+                <div class="album-card">
+                    <img src="./img/U2_Boy.png" alt="Portada de Boy" class="album-cover">
+                    <p class="album-description">Boy es el álbum debut de U2, lanzado en 1980. Fue producido por Steve Lillywhite y contiene éxitos como "I Will Follow" y "Out of Control".</p>
+                </div>
 
-            <section>
-                <h2>Historia de canciones</h2>
-                <p>Esta canción de 1983 es un himno para la paz y la justicia en todo el mundo. Con su letra poderosa y su ritmo enérgico, «Sunday Bloody Sunday» es una de las canciones más impactantes de U2.</p>
-                <p>Esta canción de 1987 es uno de los éxitos más grandes de U2. Con su introducción épica de guitarra y su letra inspirada en la lucha por la igualdad, «Where the Streets Have No Name» sigue siendo una de las canciones más populares de la banda.</p>
-                    
-                <p>Esta canción de 1991 se ha convertido en un himno para muchos fanáticos de U2, con su letra conmovedora y su melodía emotiva. «One» ha sido versionada por numerosos artistas y es considerada una de las mejores canciones de la banda.</p>
-           
-    <p>Esta canción de 2000 fue un éxito en todo el mundo y ganó varios premios, incluyendo el premio Grammy a la Canción del Año en 2001. Con su letra optimista y su melodía inspiradora, «Beautiful Day» es una de las canciones más reconocidas de U2.</p>    
-    </section>
+                <!-- Tarjeta del álbum "War" -->
+                <div class="album-card">
+                    <img src="./img/U2-War.png" alt="Portada de War" class="album-cover">
+                    <p class="album-description">War es el tercer álbum de U2, lanzado en 1983. Es conocido por canciones como "Sunday Bloody Sunday" y "New Year's Day", y refleja temas de conflicto y política.</p>
+                </div>
 
-            <section>
-                <h2>Discos emblemáticos</h2>
-                <ul> 
-                    <li>"The Joshua Tree" - Lanzado en 1987, este álbum catapultó a U2 a la fama mundial y contiene algunos de sus mayores éxitos.</li>
-                    <li>"Achtung Baby" - Este álbum, lanzado en 1991, marcó un cambio radical en el sonido de U2, adoptando elementos de música electrónica y rock industrial.</li>
-                </ul>
-            </section>
+                <!-- Tarjeta del álbum "The Unforgettable fire" -->
+                <div class="album-card">
+                    <img src="./img/th.png" alt="Portada de The Unforgettable Fire" class="album-cover">
+                    <p class="album-description">The Unforgettable Fire (Español: El Fuego Inolvidable) es el cuarto álbum de estudio de U2, y el quinto en su carrera musical. Fue editado en 1984 y grabado en el Slane Castle y los estudios Windmill Lane de Dublín. Es uno de los discos más emblemáticos de la banda y se engloba dentro de los más clásicos de su discografía, pues significa una nueva reinvención en su sonoridad, aunque no comparable a la que sufrió en 1991.</p>
+                </div>
 
-            <section>
-                <h2>Conciertos emblemáticos</h2>
-                <p>Live Aid (1985): U2 fue una de las actuaciones más memorables del histórico concierto benéfico Live Aid en 1985. Su actuación en el estadio de Wembley en Londres fue el punto de inflexión en su carrera y les proporcionó una audiencia global.</p>
-                <p> Zoo TV Tour (1992-1993): La gira Zoo TV Tour fue innovadora en términos de producción y tecnología, y redefinió lo que podía ser un concierto de rock. Los conciertos de esta gira, especialmente en lugares como el Estadio de Wembley en Londres y el Estadio de Sydney en Australia, se destacaron por su espectacularidad y originalidad.</p>
-                <p> 360° Tour (2009-2011): Esta gira fue una de las más grandes en la historia del rock, con una espectacular escenografía en forma de "garra" y una producción masiva. Los conciertos en lugares emblemáticos como el Estadio de Wembley en Londres y el Estadio Rose Bowl en California atrajeron a multitudes récord y dejaron una impresión duradera.</p>
-            
-            </section>
+                <!-- Tarjeta del álbum "The Joshua Tree" -->
+                <div class="album-card">
+                    <img src="./img/joshua.png" alt="Portada Joshua Tree" class="album-cover">
+                    <p class="album-description">The Joshua Tree es el quinto álbum de estudio de U2, lanzado en 1987. Es uno de sus álbumes más exitosos, incluyendo éxitos como "With or Without You" y "Where the Streets Have No Name".</p>
+                </div>
 
-            <section>
-                <h2>Colaboraciones</h2>
-                <p>U2 ha colaborado con artistas de renombre como B.B. King, Johnny Cash,Luciano Pavarotti,Andrea Corr y Mary J. Blige, ampliando su alcance musical y explorando nuevos sonidos.</p>
-            </section>
 
-            <section>
-                <h2>Discografía</h2>
-                <p>Puedes encontrar más información sobre los álbumes más importantes de U2 en nuestra página de detalles.</p>
-                <a href="discografia.html"> <img src="./img/U2Disco.jpg" alt="Imagen discografia de U2" class="featured-image-miniatura"></a>
-            </section>
+                <!-- Tarjeta del álbum "Rattle & Hum" -->
+                <div class="album-card">
+                    <img src="./img/rattle.png" alt="Portada Rattle & Hum" class="album-cover">
+                    <p class="album-description"> Rattle & Hum es el sexto álbum de estudio de la banda irlandesa U2.
+
+                        Fue editado y publicado en el año 1988, alcanzando el número 1 en las listas de Reino Unido y los Estados Unidos, entre otros países. El álbum está formado por temas nuevos de estudio, junto con temas extraídos de diferentes actuaciones del The Joshua Tree Tour. A pesar de su éxito popular (se calcula que ha vendido más de 14 millones de copias), y de ser uno de los discos más complejos del grupo, la crítica musical del momento se dividió entre la incomprensión y el menosprecio. Es un disco que, además de rendir homenaje a las raíces de la música popular norteamericana, funciona como bisagra en la trayectoria artística del grupo irlandés, tras cerrar una etapa con su obra cumbre The Joshua Tree, y antes de abrir nuevos caminos musicales con su siguiente lanzamiento, otra obra mayor de su discografía, Achtung Baby.</p>
+                </div>
+
+
+                <!-- Tarjeta del álbum "Acthung Baby" -->
+                <div class="album-card">
+                    <img src="./img/ab.png" alt="Portada Acthung Baby" class="album-cover">
+                    <p class="album-description">Achtung Baby -En españolː Atención bebé, del alemán "Cuidado"- es el séptimo álbum de estudio de la banda irlandesa de rock U2 publicado el 19 de noviembre de 1991 por Island Records. Fue producido por Daniel Lanois, Steve Lillywhite y el colaborador asiduo de la banda, Brian Eno.1​ Se considera como la segunda obra maestra de la banda junto con The Joshua Tree.</p>
+                </div>
+                
+                <!-- Tarjeta del álbum "Zooropa" -->
+                <div class="album-card">
+                    <img src="./img/zoo.png" alt="Portada Zooropa" class="album-cover">
+                    <p class="album-description">Zooropa es el octavo álbum de la banda de rock irlandesa U2. Se publicó dos años después de Achtung Baby, álbum con el que el grupo se reinventó a comienzos de los 90, y fue grabado durante la gira promocional de éste, el Zoo TV Tour (1992 a 1993). Se trata, en palabras del mánager del grupo Paul McGuinness, de un álbum "más experimental y esotérico".1​Se trata de una profundización del concepto que la banda planteó como una visión satírica de la era de la información y sus efectos en el hombre moderno. El nombre del disco, Zooropa, también fue el nombre la etapa europea de la gira Zoo TV Tour, ya que inicialmente sería un EP que promocionaría dicha etapa, pero su producción se extendió a un álbum completo.</p>
+                </div>
+
+                <!-- Tarjeta del álbum "All That You Can't Leave Behind" -->
+                <div class="album-card">
+                    <img src="./img/all-that-you-cant-leave-behind.png" alt="Portada All That You Can't Leave Behind" class="album-cover">
+                    <p class="album-description">All That You Can't Leave Behind es el décimo álbum de estudio dela banda de rock irlandesa U2 . Fue producido por Brian Eno y Daniel Lanois , y fue lanzado el 30 de octubre de 2000 a través de Island Records e Interscope Records . Siguiendo la experimentación de la banda con rock alternativo y música dance en la década de 1990 y la recepción mixta de su álbum de 1997, Pop , U2 volvió a un sonido más parecido a sus discos anteriores para All That You Can't Leave Behind . El grupo se reunió con Eno y Lanois, quienes habían producido juntos tres álbumes anteriores de U2. El disco se llamó originalmente "U2000", que había sido un título provisional para su gira PopMart . </p>
+                </div>
+
+              
+            </div>
+
+          
+            <div class="card-disco">
+                <section>
+                    <img src="./img/CafeU2.jpg" alt="Cafe U2" class="new-image u2-circle">
+                    <h2>Listado Albumes de U2</h2>
+                    <ol>
+                        <li>Boy (1980)</li>
+                        <li>October (1981)</li>
+                        <li>War (1983)</li>
+                        <li>The Unforgettable Fire (1984)</li>
+                        <li>The Joshua Tree (1987)</li>
+                        <li>Rattle and Hum (1988)</li>
+                        <li>Achtung Baby (1991)</li>
+                        <li>Zooropa (1993)</li>
+                        <li>Pop (1997)</li>
+                        <li>All That You Can't Leave Behind (2000)</li>
+                        <li>How to Dismantle an Atomic Bomb (2004)</li>
+                        <li>No Line on the Horizon (2009)</li>
+                        <li>Songs of Innocence (2014)</li>
+                        <li>Songs of Experience (2017)</li>
+                    </ol>
+                </section>
+              
+            </div>
+     
+
+          
         </article>
 
-        <!-- Imagen de U2 -->
-        <img src="./img/u26.png"  alt="Imagen de U2" class="u2-image">
     </main>
 
     <include src="./src/footer.html"></include>

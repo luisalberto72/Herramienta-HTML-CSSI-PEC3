@@ -667,6 +667,7 @@ dl {
 }
 
 dt {
+  margin-bottom: 20px;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -678,7 +679,7 @@ dd {
 }
 
 dd p:first-child {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 @keyframes animate-svg-fill-1 {
@@ -693,5 +694,19 @@ dd p:first-child {
 
 .svg-elem-1 {
   animation: 2s cubic-bezier(.47, 0, .745, .715) 2s infinite alternate animate-svg-fill-1;
+}
+
+.highlight {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.highlight2 {
+  background-color: #ffe4e1;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 /*# sourceMappingURL=index.b026e049.css.map */
