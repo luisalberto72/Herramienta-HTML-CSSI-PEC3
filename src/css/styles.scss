@@ -125,7 +125,7 @@ a:hover {
 }
 
 .u2-circle {
-    clip-path: circle(120px at center);
+    clip-path: circle(85px at center);
 }
 
 @media (min-width: 992px) {
@@ -514,9 +514,9 @@ footer ul.social li img:hover {
     }
     
     .u2-image {
-        max-width: 30%;
+        max-width: 80%;
         height: 20%;
-        margin-top: 0px;
+        margin-top: 70px;
         border-radius: 5px;
     }
     
@@ -553,7 +553,7 @@ footer ul.social li img:hover {
     
         .u2-image {
             order: 2;
-            margin-top: 10px;
+            margin-top: 80px;
             max-width: 96%;
             height: auto;
         }
