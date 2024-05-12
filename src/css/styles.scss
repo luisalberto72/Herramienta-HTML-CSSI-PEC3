@@ -89,6 +89,13 @@ h4 {
     font-size: 1.2rem;
 }
 
+h1.header{
+  
+    margin-top:40px;
+    font-size:2rem;
+
+}
+
 p {
     font-size: 1rem;
     line-height: 1.5;
@@ -332,7 +339,7 @@ footer ul.social li img:hover {
         }
         .container {
             font-size: 0.5rem;
-        }
+        }  
     }
     
     /**************************************** Página de inicio */
@@ -557,6 +564,8 @@ footer ul.social li img:hover {
             max-width: 96%;
             height: auto;
         }
+
+       
     }
     
     figure {
@@ -735,4 +744,14 @@ footer ul.social li img:hover {
         padding: 10px;
         border-radius: 5px;
         margin-bottom: 20px;
+       
+    }
+
+    .highlight3 {
+        background-color: #f0f0f0; /* Cambiar a un color de fondo con suficiente contraste */
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width:83%;
     }

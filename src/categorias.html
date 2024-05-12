@@ -7,7 +7,9 @@
     <meta name="description" content="Anécdotas interesantes U2.Descubre curiosidades y detalles interesantes sobre U2.Discos emblemáticos U2.Conciertos emblemáticos U2.">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="icon" type="image/png" sizes="16x16"  href="./img/favicon-U2.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <style>
 
         /* Estilos para la tarjeta de álbum */
@@ -49,11 +51,11 @@
         }
 
          /* Cambiar el color del enlace al pasar el cursor sobre él */
-    .album-link:hover {
-        color: orange; /* Cambiar el color del texto a naranja */
-    }
+         .album-link:hover {
+            color: orange; /* Cambiar el color del texto a naranja */
+        }
 
-        .album-link:hover .album-cover {
+    .album-link:hover .album-cover {
             transform: scale(1.1); /* Aumentar ligeramente el tamaño al hacer hover */
         }
             /* Alinear el enlace a la izquierda */
@@ -67,17 +69,12 @@
         text-align: left; /* Alinear el texto a la izquierda */
     }
 
-        /* Estilos para la imagen U2Cafe */
-.new-image {
-    width: 200px; /* Tamaño deseado para la imagen */
-    height: auto; /* Para mantener la proporción de aspecto */
-    margin-left:100px; 
-    margin-top: 20px; /* Margen superior */
-}
+
 
 .like-count {
             color:var(--main-color);
         }
+
         .container-discografia {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
@@ -132,7 +129,6 @@
     margin-top: 20px; /* Margen superior */
 }
 
-
 }
 
 /* Media queries para tablets */
@@ -145,7 +141,7 @@
     .new-image {
     width: 200px; /* Tamaño deseado para la imagen */
     height: auto; /* Para mantener la proporción de aspecto */
-    margin-left:40px; 
+    margin-left:20px; 
     margin-top: 20px; /* Margen superior */
 }
 
@@ -161,7 +157,7 @@
     .new-image {
     width: 200px; /* Tamaño deseado para la imagen */
     height: auto; /* Para mantener la proporción de aspecto */
-    margin-left:40px; 
+    margin-left:100px; 
     margin-top: 20px; /* Margen superior */}
 }
 
@@ -185,9 +181,9 @@
             <div class="container-discografia">
                 <!-- Tarjeta del álbum "Boy" -->
                
-            <div class="album-card">
+            <div class="album-card1">
                 <a href="./discografia.html" class="album-link"> <!-- Enlace a la página de discografía -->
-                    <img src="./img/u2_boy-deluxe-edition.jpg" alt="Portada de Boy" class="album-cover img-fluid">
+                    <img src="./img/boy_small.jpg" alt="Portada de Boy" class="album-cover img-fluid">
                 </a>
                 <div class="album-info">
                     <a href="./discografia.html" class="album-link"><p class="album-title">Boy Deluxe Edition</p></a> <!-- Título del álbum -->
@@ -197,7 +193,7 @@
                 </div>
             </div>
              
-            <div class="album-card">
+            <div class="album-card2">
                 <a href="./discografia.html" class="album-link"> <!-- Enlace a la página de discografía -->
                     <img src="./img/u2_war.jpg" alt="Portada de War" class="album-cover img-fluid">
                 </a>
@@ -323,5 +319,6 @@
     <include src="./src/footer.html"></include>
     <!-- Scripts -->
     <script src="./js/script.js"></script>
+   
 </body>
 </html>
