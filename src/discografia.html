@@ -1,222 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U2 - Detalles del álbum Boy</title>
+    <title>Categorías U2</title>
+    <meta name="description" content="Anécdotas interesantes U2.Descubre curiosidades y detalles interesantes sobre U2.Discos emblemáticos U2.Conciertos emblemáticos U2.">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <style>
-       
-     
-        header {
-            background-color: #fff;
-            color: #000;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        header h1 {
-            margin: 20;
-        }
-
-        .album-info {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .album-cover {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .album-title {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 20px;
-        }
-
-        .album-year {
-            margin-top: 10px;
-            text-align: center;
-            color: #666;
-        }
-
-        .album-tracklist {
-            margin-top: 20px;
-        }
-
-        .track {
-            margin-bottom: 10px;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-        }
-
-        .track-number {
-            font-weight: bold;
-        }
-
-        .track-title {
-            margin-left: 10px;
-        }
-
-        h1.detalle{
-            margin-top:40px;
-        }
-
-        .album-like {
-            display: flex;
-            justify-content:center; /* Alinea el botón de like a la derecha */
-            align-items:center;
-            margin-top: 10px;
-        }
-
-        #like-icon {
-            color: var(--main-color);
-            font-size: 32px;
-            margin-right: 5px;
-        }
-
-        .like-count {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-    </style>
+    <link rel="icon" type="image/png" sizes="16x16"  href="./img/favicon-U2.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 </head>
-
 <body>
-
     <include src="./src/header.html"></include>
 
     <!-- Contenido principal -->
-    <main class="detalles">
-    <article>
-        <header>
-            <h1 class="detalle">Álbum Boy</h1>
-        </header>
-        
-        <div class="album-info">
-            <picture>
-                <source media="(max-width: 799px)" srcset="./img/boy_small.jpg">
-                <source media="(min-width: 800px)" srcset="./img/boy_large.jpg">
-                <img src="./img/boy_large.jpg" alt="Portada de Boy" class="album-cover">
-            </picture>
-            <h2 class="album-title">Boy Deluxe Edition</h2>
-            <p class="album-year">Año: 1980</p>
-            <div class="album-like">
-                <i class="fas fa-thumbs-up " id="like-icon"></i> <!-- Ícono de "like" -->
-                    <span id="like-count">0</span> <!-- Contador de likes -->
-            </div>
-
-
-            <div class="album-tracklist">
-                <div class="genreListTitle" style="border-bottom:1px solid #ccd;margin-bottom:20px;font-weight:600;font-size:1.5rem;">
-                 Información del Disco </div>
-                <div><span><strong>Álbum:</strong></span><span> Boy</span></div><br>
-                <div><span><strong>Artista:</strong></span><span> U2</span></div><br>
-                <div><span><strong>Año:</strong></span><span> 1980</span></div><br>
-                <div><span><strong>Tipo:</strong></span><span> Disco de estudio</span></div><br>
-                <div><span><strong>Lanzamiento:</strong></span><span> 20 de Octubre de 1980</span></div><br>
-                <div><span><strong>Compañía Discográfica:</strong></span><span> Island Records<span></span></div><br>
-            </div><br>
+    <main class="categorias">
+        <article>
+            <header class="categorias">
+                <h1>Discografía</h1>
+                <p>Explora los álbumes icónicos de U2</p>
+            </header> 
             
-            <div class="artist-info-clean ArticleText ArticleTextDiv" style="margin-bottom:0;background:transparent;"><div class="genreListTitle" style="border-bottom:1px solid #ccd;margin-bottom:20px;font-weight:600;"></div>
-                    <div class="genreListTitle" style="border-bottom:1px solid #ccd;margin-bottom:20px;font-weight:600;font-size:1.5rem;">
-                        Canciones</div>
-                    <div class="track">
-                    <span class="track-number">01.</span>
-                    <span class="track-title">I Will Follow</span>
-                </div>
-                <div class="track">
-                    <span class="track-number">02.</span>
-                    <span class="track-title">Twilight</span>
-                </div>
-                <div class="track">
-                    <span class="track-number">03.</span>
-                    <span class="track-title">An Cat Dubh</span>
-                </div>
-                <div class="track">
-                    <span class="track-number">04.</span>
-                    <span class="track-title">Into the Heart</span>
-                </div>
-                <div class="track">
-                    <span class="track-number">05.</span>
-                    <span class="track-title">Out of Control</span>
-                </div>
-                <div class="track">
-                    <span class="track-number">06.</span>
-                    <span class="track-title">Stories For Boys</span>
-                </div>
-                <div class="track">
-                    <span class="track-number">07.</span>
-                    <span class="track-title">Ocean</span>
-                </div>
-                <div class="track">
-                    <span class="track-number">08.</span>
-                    <span class="track-title">Day Without Me </span>
-                </div>
-                <div class="track">
-                    <span class="track-number">09.</span>
-                    <span class="track-title"> Another Time, Another Place</span>
-                </div>
-                <div class="track">
-                    <span class="track-number">10.</span>
-                    <span class="track-title">Electric Co. </span>
-                </div>
-                <div class="track">
-                    <span class="track-number">11.</span>
-                    <span class="track-title">Shadows And Tall Trees</span>
-                </div>
+            <div class="container-discografia">
+                <!-- Tarjeta del álbum "Boy" -->
                
+            <div class="album-card">
+                <a href="./boy.html" class="album-link"> <!-- Enlace a la página de discografía -->
+                    <img src="./img/boy_small.jpg" alt="Portada de Boy" class="album-cover img-fluid">
+                </a>
+                <div class="album-info">
+                    <a href="./boy.html" class="album-link"><p class="album-title">Boy Deluxe Edition</p></a> <!-- Título del álbum -->
+                    <p class="album-year">Año: 1980 </p> <!-- Año de edición -->
+                    <i class="fas fa-thumbs-up" id="like-icon"></i> <!-- Ícono de "like" -->
+                    <span id="like-count">0</span> <!-- Contador de likes -->
+                </div>
+            </div>
+             
+            <div class="album-card">
+                <a href="#" class="album-link"> <!-- Enlace a la página de discografía -->
+                    <img src="./img/u2_war.jpg" alt="Portada de War" class="album-cover img-fluid">
+                </a>
+                <div class="album-info">
+                    <a href="#" class="album-link"><p class="album-title">War</p></a> <!-- Título del álbum -->
+                    <p class="album-year">Año: 1983 </p> <!-- Año de edición -->
+                    <i class="fas fa-thumbs-up" id="like-icon2"></i> <!-- Ícono de "like" -->
+                    <span id="like-count2">0</span> <!-- Contador de likes -->
+                </div>
             </div>
 
 
-            <picture>
-                <source media="(max-width: 799px)" sizes="50vw" srcset="./img/boy2_small.avif?as=avif" type="image/avif">
-                <source media="(min-width: 800px)" sizes="30vw" srcset="./img/boy2_large.avif?as=avif" type="image/avif">
-                <source media="(max-width: 799px)" sizes="50vw" srcset="./img/boy2_small.jpg?as=webp"  type="image/webp">
-                <source media="(min-width: 800px)" sizes="30vw" srcset="./img/boy2_large.jpg?as=webp"  type="image/webp">
-                <img src="./img/boy2_large.jpg" alt="Imagen vinilo boy">
-            </picture>
-          
-            <p class="highlight3">Boy es el álbum debut de U2, lanzado en 1980. Fue producido por Steve Lillywhite y contiene éxitos como "I Will Follow" y "Out of Control".</p>
-          
-                <img srcset="./img/bono_small.jpg 480w,
-                ./img/bono_large.jpg 800w"
-                 sizes="(max-width: 600px) 480px, 
-                        800px"
-                 src="./img/bono_large.jpg" alt="Imagen Bono">
-                 <p>Bono cantante de U2</p> 
+            <div class="album-card">
+                <a href="#" class="album-link"> <!-- Enlace a la página de discografía -->
+                    <img src="./img/u2_the-unforgettable-fire-album.jpg" alt="Portada de Unforgettable fire" class="album-cover img-fluid">
+                </a>
+                <div class="album-info">
+                    <a href="#" class="album-link"><p class="album-title">The Unforgettable fire</p></a> <!-- Título del álbum -->
+                    <p class="album-year">Año: 1984 </p> <!-- Año de edición -->
+                    <i class="fas fa-thumbs-up" id="like-icon3"></i> <!-- Ícono de "like" -->
+                    <span id="like-count3">0</span> <!-- Contador de likes -->
+                </div>
+            </div>
+
+            <div class="album-card">
+                <a href="./discografia.html" class="album-link"> <!-- Enlace a la página de discografía -->
+                    <img src="./img/u2_the-joshua-tree.jpg" alt="Portada de Joshua Tree" class="album-cover img-fluid">
+                </a>
+                <div class="album-info">
+                    <a href="./discografia.html" class="album-link"><p class="album-title">The Joshua Tree</p></a> <!-- Título del álbum -->
+                    <p class="album-year">Año: 1987 </p> <!-- Año de edición -->
+                    <i class="fas fa-thumbs-up" id="like-icon4"></i> <!-- Ícono de "like" -->
+                    <span id="like-count4">0</span> <!-- Contador de likes -->
+                </div>
+            </div>
+
+            <div class="album-card">
+                <a href="#" class="album-link"> <!-- Enlace a la página de discografía -->
+                    <img src="./img/u2_rattle-and-hum.jpg" alt="Portada de Rattle and hum" class="album-cover img-fluid">
+                </a>
+                <div class="album-info">
+                    <a href="#" class="album-link"><p class="album-title">Rattle & Hum</p></a> <!-- Título del álbum -->
+                    <p class="album-year">Año: 1988 </p> <!-- Año de edición -->
+                    <i class="fas fa-thumbs-up" id="like-icon5"></i> <!-- Ícono de "like" -->
+                    <span id="like-count5">0</span> <!-- Contador de likes -->
+                </div>
+            </div>
+
+            <div class="album-card">
+                <a href="#" class="album-link"> <!-- Enlace a la página de discografía -->
+                    <img src="./img/u2_achtung-baby.jpg" alt="Portada de Acthung Baby" class="album-cover img-fluid">
+                </a>
+                <div class="album-info">
+                    <a href="#" class="album-link"><p class="album-title">Acthung Baby</p></a> <!-- Título del álbum -->
+                    <p class="album-year">Año: 1991 </p> <!-- Año de edición -->
+                    <i class="fas fa-thumbs-up" id="like-icon6"></i> <!-- Ícono de "like" -->
+                    <span id="like-count6">0</span> <!-- Contador de likes -->
+                </div>
+            </div>
+
+            <div class="album-card">
+                <a href="#" class="album-link"> <!-- Enlace a la página de discografía -->
+                    <img src="./img/u2_zooropa.jpg" alt="Portada de Zooropa" class="album-cover img-fluid">
+                </a>
+                <div class="album-info">
+                    <a href="#" class="album-link"><p class="album-title">Zooropa</p></a> <!-- Título del álbum -->
+                    <p class="album-year">Año: 1993 </p> <!-- Año de edición -->
+                    <i class="fas fa-thumbs-up" id="like-icon7"></i> <!-- Ícono de "like" -->
+                    <span id="like-count7">0</span> <!-- Contador de likes -->
+                </div>
+            </div>
+
+            <div class="album-card">
+                <a href="#" class="album-link"> <!-- Enlace a la página de discografía -->
+                    <img src="./img/u2_all-that-you-cant-leave-behind.jpg" alt="Portada de All That You Can't Leave Behind" class="album-cover img-fluid">
+                </a>
+                <div class="album-info">
+                    <a href="#" class="album-link"><p class="album-title">All That You Can't Leave Behind</p></a> <!-- Título del álbum -->
+                    <p class="album-year">Año: 2000 </p> <!-- Año de edición -->
+                    <i class="fas fa-thumbs-up" id="like-icon8"></i> <!-- Ícono de "like" -->
+                    <span id="like-count8">0</span> <!-- Contador de likes -->
+                </div>
+            </div>
 
 
+            </div>
+         
+         
+ 
+        </article>
+
+         
+         <div class="card-disco">
+            <section>
+                <img src="./img/CafeU2.jpg" alt="Cafe U2" class="new-image u2-circle img-fluid">
+                <h2>Listado Álbumes de U2</h2>
+                <ol>
+                    <li>Boy (1980)</li>
+                    <li>October (1981)</li>
+                    <li>War (1983)</li>
+                    <li>The Unforgettable Fire (1984)</li>
+                    <li>The Joshua Tree (1987)</li>
+                    <li>Rattle and Hum (1988)</li>
+                    <li>Achtung Baby (1991)</li>
+                    <li>Zooropa (1993)</li>
+                    <li>Pop (1997)</li>
+                    <li>All That You Can't Leave Behind (2000)</li>
+                    <li>How to Dismantle an Atomic Bomb (2004)</li>
+                    <li>No Line on the Horizon (2009)</li>
+                    <li>Songs of Innocence (2014)</li>
+                    <li>Songs of Experience (2017)</li>
+                </ol>
+            </section>    
+
+             <!-- Imagen de U2 -->
+        <img src="./img/u26.png"  alt="Imagen de U2" class="u2-image img-fluid">
+       
         </div>
-        
-         <!-- Video de U2 -->
-         <figure>
-            <iframe class="video-fluid" width="560" height="315" src="https://www.youtube.com/embed/-sLzV00gNUo?si=asceK4tumHiynahr" allowfullscreen></iframe>  
-            <figcaption>Video I Will Follow</figcaption> 
+       
 
-        </figure>
-    </article>
     </main>
 
     <include src="./src/footer.html"></include>
-     <!-- Scripts -->
-     <script src="./js/script.js"></script>
-
+    <!-- Scripts -->
+    <script src="./js/script.js"></script>
+   
 </body>
-
 </html>

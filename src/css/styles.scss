@@ -60,9 +60,12 @@ body {
     background-color: var(--neutral-color);
 }
 
-h1.header {
-    font-size: 1.5rem;
-    color: var(--blanco-color);
+p.titulo {
+    color: var(--blanco-color); 
+    margin-top: 5px;
+    font-weight: 600;
+    font-family: var(--serif-font);
+    font-size: 1.6rem;
 }
 
 h1,
@@ -72,12 +75,13 @@ h4 {
     font-weight: 600;
     font-family: var(--serif-font);
 }
+
 h1 {
-    font-size: 2.3rem;
-    margin-bottom: 2rem;
-}
-h2 {
     font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -89,12 +93,7 @@ h4 {
     font-size: 1.2rem;
 }
 
-h1.header{
-  
-    margin-top:40px;
-    font-size:2rem;
 
-}
 
 p {
     font-size: 1rem;
@@ -482,7 +481,7 @@ footer ul.social li img:hover {
         }
     }
     
-    /**************************************** Página Categorias */
+    /**************************************** Página discografía */
     header.categorias {
         background-color: var(--header-color);
         color: #fff;
@@ -579,7 +578,7 @@ footer ul.social li img:hover {
         font-size: 0.75rem;
     }
     
-    /**************************************** Videos responsive del sitio web */
+/**************************************** Videos responsive del sitio web */
     iframe.video-fluid {
         width: 100%;
         height: auto;
@@ -647,17 +646,17 @@ footer ul.social li img:hover {
         }
     }
     
-    /************************* Main ***************************/
-    main.presentacion {
+/************************* Main ***************************/
+main.presentacion {
         padding-top: 50px;
         padding-bottom: 50px;
         min-height: calc(100vh - 310px);
     }
     
-    /************************* Página Detalles ***************************/
+/************************* Página Boy (Detalles) ***************************/
     
-    /* Estilos específicos para la distribución de las tarjetas */
-    .container-discografia {
+/* Estilos específicos para la distribución de las tarjetas */
+.container-discografia {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
@@ -665,22 +664,24 @@ footer ul.social li img:hover {
         justify-items: center;
     }
     
-    .album-card {
+.album-card {
         border: 1px solid #ccc;
         border-radius: 5px;
         overflow: hidden;
     }
     
-    .album-cover {
+.album-cover {
         width: 100%;
         height: auto;
     }
     
-    .album-description {
+.album-description {
         padding: 10px;
         text-align: center;
     }
     
+/************************* Página Boy Presentación ***************************/
+
     dl {
         margin-left: 3rem;
     }
@@ -726,20 +727,38 @@ footer ul.social li img:hover {
         }
     }
     
-    .svg-elem-1 {
+.svg-elem-1 {
         -webkit-animation: animate-svg-fill-1 2s cubic-bezier(0.47, 0, 0.745, 0.715) 2s infinite alternate;
         animation: animate-svg-fill-1 2s cubic-bezier(0.47, 0, 0.745, 0.715) 2s infinite alternate;
     }
 
 
-    .highlight {
+.container {
+           
+           
+            
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+.animacion {
+transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.animacion:hover {
+transform: scale(1.1);
+color: rgb(0, 50, 100);  /* Cambia al color deseado */}
+
+
+
+.highlight {
         background-color: #f0f0f0; /* Cambiar a un color de fondo con suficiente contraste */
         padding: 10px;
         border-radius: 5px;
         margin-bottom: 20px;
     }
 
-    .highlight2 {
+.highlight2 {
         background-color: #ffe4e1;
         padding: 10px;
         border-radius: 5px;
@@ -747,7 +766,7 @@ footer ul.social li img:hover {
        
     }
 
-    .highlight3 {
+.highlight3 {
         background-color: #f0f0f0; /* Cambiar a un color de fondo con suficiente contraste */
         padding: 10px;
         border-radius: 5px;
@@ -755,3 +774,324 @@ footer ul.social li img:hover {
         margin-top: 20px;
         width:83%;
     }
+
+
+/************************* Página Boy Album (Detalles) ***************************/
+
+/* Estilos para la tarjeta de álbum */
+.album-card {
+            width: 200px; /* Ancho fijo para cada tarjeta */
+            border-radius: 8px; /* Borde redondeado */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+            margin: 20px; /* Margen entre tarjetas */
+            overflow: hidden; /* Ocultar el exceso de contenido */
+     }
+
+.album-cover {
+            width: 100%; /* Ancho completo de la imagen */
+            height: auto; /* Altura automática para mantener la proporción */
+            border-bottom: 1px solid #ddd; /* Línea divisoria debajo de la imagen */
+    }
+
+.album-info {
+            padding: 10px; /* Espaciado interno */
+            background-color: #f9f9f9; /* Fondo gris claro */
+    }
+
+.album-title {
+            margin: 0; /* Eliminar el margen superior del título */
+             font-weight: bold; /* Texto en negrita */
+            font-size:0.75rem;
+           
+    }
+
+.album-year {
+            margin-top: 5px; /* Margen superior para el año */
+            color: #888; /* Color de texto gris */
+            font-size: 0.7em; /* Tamaño de fuente ligeramente más pequeño */
+        }
+
+.album-link {
+            color:var(--main-color);
+            text-decoration: none; /* Quitar subrayado del enlace */
+        }
+
+    /* Cambiar el color del enlace al pasar el cursor sobre él */
+.album-link:hover {
+            color: orange; /* Cambiar el color del texto a naranja */
+        }
+
+.album-link:hover .album-cover {
+            transform: scale(1.1); /* Aumentar ligeramente el tamaño al hacer hover */
+        }
+            /* Alinear el enlace a la izquierda */
+.album-link {
+        display: inline-block; /* Convertir el enlace en un bloque para permitir alineación */
+        text-align: left; /* Alinear el texto a la izquierda */
+    }
+
+    /* Estilo para el año de edición */
+.album-year {
+        text-align: left; /* Alinear el texto a la izquierda */
+    }
+
+
+
+.like-count {
+            color:var(--main-color);
+        }
+
+        .container-discografia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+
+
+.u2-image:hover {
+    transform: scale(1.1) rotate(10deg); /* Escalar y rotar la imagen al hacer hover */
+    filter: brightness(1.2); /* Aumentar el brillo */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Escala inicial */
+    }
+    50% {
+        transform: scale(1.1); /* Escala aumentada a la mitad */
+    }
+    100% {
+        transform: scale(1); /* Escala de vuelta a la normalidad */
+    }
+}
+
+.u2-image-container:hover .u2-image {
+    animation: pulse 1.5s infinite; /* Aplicar la animación de pulso al contenedor al hacer hover */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Estilos generales */
+
+/* Aquí van los estilos que no están relacionados con media queries */
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    /* Estilos específicos para dispositivos móviles */
+    .container-discografia {
+        grid-template-columns: repeat(1, 1fr); /* Cambia a una sola columna en dispositivos móviles */
+    }
+    .new-image {
+    width: 200px; /* Tamaño deseado para la imagen */
+    height: auto; /* Para mantener la proporción de aspecto */
+    margin-left:40px; 
+    margin-top: 20px; /* Margen superior */
+}
+
+}
+
+/* Media queries para tablets */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Estilos específicos para tablets */
+    .container-discografia {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas en tablets */
+    }
+
+    .new-image {
+    width: 200px; /* Tamaño deseado para la imagen */
+    height: auto; /* Para mantener la proporción de aspecto */
+    margin-left:20px; 
+    margin-top: 20px; /* Margen superior */
+}
+
+}
+
+/* Media queries para pantallas más grandes */
+@media only screen and (min-width: 993px) {
+    /* Estilos específicos para pantallas más grandes */
+    .container-discografia {
+        grid-template-columns: repeat(3, 1fr); /* Mantiene tres columnas en pantallas más grandes */
+    }
+
+    .new-image {
+    width: 200px; /* Tamaño deseado para la imagen */
+    height: auto; /* Para mantener la proporción de aspecto */
+    margin-left:100px; 
+    margin-top: 20px; /* Margen superior */}
+}
+
+
+  
+header {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 20;
+}
+
+.album-info {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.album-cover {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.album-title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.album-year {
+    margin-top: 10px;
+    text-align: center;
+    color: #666;
+}
+
+.album-tracklist {
+    margin-top: 20px;
+}
+
+.track {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.track-number {
+    font-weight: bold;
+}
+
+.track-title {
+    margin-left: 10px;
+}
+
+h1.detalle{
+    margin-top:40px;
+}
+
+.album-like {
+    display: flex;
+    justify-content:center; /* Alinea el botón de like a la derecha */
+    align-items:center;
+    margin-top: 10px;
+}
+
+#like-icon {
+    color: var(--main-color);
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.like-count {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/************************* Página Detalles ***************************/
+
+  
+header {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 20;
+}
+
+.album-info {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.album-cover {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.album-title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.album-year {
+    margin-top: 10px;
+    text-align: center;
+    color: #666;
+}
+
+.album-tracklist {
+    margin-top: 20px;
+}
+
+.track {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.track-number {
+    font-weight: bold;
+}
+
+.track-title {
+    margin-left: 10px;
+}
+
+h1.detalle{
+    margin-top:40px;
+}
+
+.album-like {
+    display: flex;
+    justify-content:center; /* Alinea el botón de like a la derecha */
+    align-items:center;
+    margin-top: 10px;
+}
+
+#like-icon {
+    color: var(--main-color);
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.like-count {
+    font-size: 18px;
+    font-weight: bold;
+}
