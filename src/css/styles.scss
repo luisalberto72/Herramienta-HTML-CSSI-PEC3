@@ -526,6 +526,15 @@ footer ul.social li img:hover {
         border-radius: 5px;
     }
     
+ 
+    .u2-image2 {
+        max-width: 40%;
+        height: 20%;
+        margin-top: 70px;
+        margin-left:40px;
+        border-radius: 5px;
+    }
+
     article header.categorias h1 {
         font-size: 24px;
         margin-bottom: 10px;
@@ -564,7 +573,6 @@ footer ul.social li img:hover {
             height: auto;
         }
 
-       
     }
     
     figure {
@@ -854,6 +862,11 @@ color: rgb(0, 50, 100);  /* Cambia al color deseado */}
     filter: brightness(1.2); /* Aumentar el brillo */
 }
 
+.u2-image2:hover {
+    transform: scale(1.1) rotate(10deg); /* Escalar y rotar la imagen al hacer hover */
+    filter: brightness(1.2); /* Aumentar el brillo */
+}
+
 @keyframes pulse {
     0% {
         transform: scale(1); /* Escala inicial */
@@ -891,6 +904,14 @@ color: rgb(0, 50, 100);  /* Cambia al color deseado */}
     height: auto; /* Para mantener la proporción de aspecto */
     margin-left:40px; 
     margin-top: 20px; /* Margen superior */
+}
+
+.u2-image2 {
+    max-width: 80%;
+    height: 20%;
+    margin-top: 70px;
+    margin-left: 70px;
+    border-radius: 5px;
 }
 
 }
