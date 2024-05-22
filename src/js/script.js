@@ -49,7 +49,7 @@ function setupLikeButton(likeIconId, likeCountId) {
 }
 
 // Configurar botones de like
-setupLikeButton('like-icon', 'like-count');
+setupLikeButton('like-icon1', 'like-count1');
 setupLikeButton('like-icon2', 'like-count2');
 setupLikeButton('like-icon3', 'like-count3');
 setupLikeButton('like-icon4', 'like-count4');

@@ -755,12 +755,13 @@ transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 
 .animacion:hover {
 transform: scale(1.1);
-color: rgb(0, 50, 100);  /* Cambia al color deseado */}
+color: rgb(0, 50, 100); 
+}
 
 
 
 .highlight {
-        background-color: #f0f0f0; /* Cambiar a un color de fondo con suficiente contraste */
+        background-color: #f0f0f0; 
         padding: 10px;
         border-radius: 5px;
         margin-bottom: 20px;
@@ -1020,7 +1021,7 @@ h1.detalle{
     margin-top: 10px;
 }
 
-#like-icon {
+#like-icon-detalle {
     color: var(--main-color);
     font-size: 32px;
     margin-right: 5px;
