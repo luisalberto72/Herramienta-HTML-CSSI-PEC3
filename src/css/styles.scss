@@ -609,8 +609,11 @@ footer ul.social li img:hover {
     }
     
     .centered-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         max-width: 100%;
-        max-height: 100%;
+        max-height: auto;
     }
     
     .image-caption {

@@ -26,15 +26,14 @@
             <picture>
                 <source media="(max-width: 799px)" srcset="./img/boy_small.jpg">
                 <source media="(min-width: 800px)" srcset="./img/boy_large.jpg">
-                <img src="./img/boy_large.jpg" alt="Portada de Boy" class="album-cover" >
+                <img src="./img/boy_large.jpg" alt="Portada de Boy" class="album-cover" loading="lazy">
             </picture>
             <h2 class="album-title">Boy Deluxe Edition</h2>
             <p class="album-year">Año: 1980</p>
             <div class="album-like">
-                <i class="fas fa-thumbs-up " id="like-icon1""></i> <!-- Ícono de "like" -->
-                    <span id="like-count1">0</span> <!-- Contador de likes -->
+                <i class="fas fa-thumbs-up" id="like-icon1"></i> <!-- Ícono de "like" -->
+                <span id="like-count1">0</span> <!-- Contador de likes -->
             </div>
-
 
             <div class="album-tracklist">
                 <div class="genreListTitle" style="border-bottom:1px solid #ccd;margin-bottom:20px;font-weight:600;font-size:1.5rem;">
@@ -94,42 +93,38 @@
                     <span class="track-number">11.</span>
                     <span class="track-title">Shadows And Tall Trees</span>
                 </div>
-               
             </div>
-
 
             <picture>
                 <source media="(max-width: 799px)" sizes="50vw" srcset="./img/boy2_small.avif?as=avif" type="image/avif">
                 <source media="(min-width: 800px)" sizes="30vw" srcset="./img/boy2_large.avif?as=avif" type="image/avif">
                 <source media="(max-width: 799px)" sizes="50vw" srcset="./img/boy2_small.jpg?as=webp"  type="image/webp">
                 <source media="(min-width: 800px)" sizes="30vw" srcset="./img/boy2_large.jpg?as=webp"  type="image/webp">
-                <img src="./img/boy2_large.jpg" alt="Imagen vinilo boy">
+                <img src="./img/boy2_large.jpg" alt="Imagen vinilo boy" loading="lazy">
             </picture>
           
             <p class="highlight3">Boy es el álbum debut de U2, lanzado en 1980. Fue producido por Steve Lillywhite y contiene éxitos como "I Will Follow" y "Out of Control".</p>
           
-                <img srcset="./img/bono_small.jpg 480w,
+            <img srcset="./img/bono_small.jpg 480w,
                 ./img/bono_large.jpg 800w"
                  sizes="(max-width: 600px) 480px, 
                         800px"
-                 src="./img/bono_large.jpg" alt="Imagen Bono">
-                 <p>Bono cantante de U2</p> 
-
-
+                 src="./img/bono_large.jpg" alt="Imagen Bono" loading="lazy">
+            <p>Bono cantante de U2</p>
         </div>
         
-         <!-- Video de U2 -->
+        <!-- Video de U2 -->
         <figure>
-            <iframe class="video-fluid" width="560" height="315" src="https://www.youtube.com/embed/-sLzV00gNUo?si=asceK4tumHiynahr" allowfullscreen></iframe>  
+            <iframe class="video-fluid" width="560" height="315" src="https://www.youtube.com/embed/-sLzV00gNUo?si=asceK4tumHiynahr" loading="lazy" allowfullscreen></iframe>  
             <figcaption>Video I Will Follow</figcaption> 
         </figure>
     </article>
     </main>
 
     <include src="./src/footer.html"></include>
-     <!-- Scripts -->
-     <script src="./js/script.js"></script>
+
+    <!-- Scripts -->
+    <script src="./js/script.js" async></script>
 
 </body>
-
 </html>
